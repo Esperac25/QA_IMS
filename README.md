@@ -1,4 +1,3 @@
-Coverage: 34%
 # IMS Project
 
 An inventory management system where users can use CRUD functionality and access the IMS database and tables: Customers, Orders, Items.
@@ -8,6 +7,7 @@ An inventory management system where users can use CRUD functionality and access
 
 These tests are ran with Mockito and Junit.
 
+--------
 <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
 <dependency>
     <groupId>org.junit.jupiter</groupId>
@@ -29,17 +29,11 @@ These tests are ran with Mockito and Junit.
     <version>3.10.0</version>
     <scope>test</scope>
 </dependency>
-
+--------
 
 ### Unit Tests 
 
-Explain what these tests test, why and how to run them
-
-
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+Testing the Customer, Order and Item classes and all methods contained.
 
 ## Built With
 
