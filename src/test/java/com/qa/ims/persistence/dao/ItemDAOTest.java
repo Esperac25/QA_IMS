@@ -61,4 +61,4 @@ public class ItemDAOTest {
 	
 }
 
-//Errors persist and this test is currently not running
+//Errors persist and this test is currently not running, will attempt to have these fixed before the deadline at 3:30pm EST
