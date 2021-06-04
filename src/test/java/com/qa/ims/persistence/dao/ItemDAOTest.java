@@ -9,12 +9,13 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.qa.ims.persistence.domain.Customer;
+import com.qa.ims.persistence.domain.Item;
 import com.qa.ims.utils.DBUtils;
 
-public class CustomerDAOTest {
 
-	private final CustomerDAO DAO = new CustomerDAO();
+public class ItemDAOTest {
+	
+	private final ItemDAO DAO = new ItemDAO();
 
 	@Before
 	public void setup() {
@@ -24,31 +25,31 @@ public class CustomerDAOTest {
 
 // 	@Test
 // 	public void testCreate() {
-// 		final Customer created = new Customer(2L, "cathy", "johnson");
+// 		final Item created = new Item(2L, "couch", 200.00);
 // 		assertEquals(created, DAO.create(created));
 // 	}
 
 // 	@Test
 // 	public void testReadAll() {
-// 		List<Customer> expected = new ArrayList<>();
-// 		expected.add(new Customer(1L, "cathy", "johnson"));
+// 		List<Item> expected = new ArrayList<>();
+// 		expected.add(new Item(1L, "bed", 500.00));
 // 		assertEquals(expected, DAO.readAll());
 // 	}
 
 // 	@Test
 // 	public void testReadLatest() {
-// 		assertEquals(new Customer(1L, "cathy", "johnson"), DAO.readLatest());
+// 		assertEquals(new Item(2L, "table", 50.00), DAO.readLatest());
 // 	}
 
 // 	@Test
 // 	public void testRead() {
 // 		final long id = 1L;
-// 		assertEquals(new Customer(id, "cathy", "johnson"), DAO.read(id));
+// 		assertEquals(new Item(id, "macbook", 800.00), DAO.read(id));
 // 	}
 
 // 	@Test
 // 	public void testUpdate() {
-// 		final Customer updated = new Customer(1L, "cathy", "johnson");
+// 		final Item updated = new Item(1L, "lamp", 50.00);
 // 		assertEquals(updated, DAO.update(updated));
 
 // 	}
@@ -56,7 +57,8 @@ public class CustomerDAOTest {
 // 	@Test
 // 	public void testDelete() {
 // 		assertEquals(1, DAO.delete(1));
-	}
+// 	}
+	
 }
 
-//DAO's need work not running
+//Errors persist and this test is currently not running, will attempt to have these fixed before the deadline at 3:30pm EST
