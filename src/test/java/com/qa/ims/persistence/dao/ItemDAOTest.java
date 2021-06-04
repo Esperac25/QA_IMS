@@ -23,41 +23,41 @@ public class ItemDAOTest {
 		DBUtils.getInstance().init("src/test/resources/sql-schema.sql", "src/test/resources/sql-data.sql");
 	}
 
-	@Test
-	public void testCreate() {
-		final Item created = new Item(2L, "couch", 200.00);
-		assertEquals(created, DAO.create(created));
-	}
+// 	@Test
+// 	public void testCreate() {
+// 		final Item created = new Item(2L, "couch", 200.00);
+// 		assertEquals(created, DAO.create(created));
+// 	}
 
-	@Test
-	public void testReadAll() {
-		List<Item> expected = new ArrayList<>();
-		expected.add(new Item(1L, "bed", 500.00));
-		assertEquals(expected, DAO.readAll());
-	}
+// 	@Test
+// 	public void testReadAll() {
+// 		List<Item> expected = new ArrayList<>();
+// 		expected.add(new Item(1L, "bed", 500.00));
+// 		assertEquals(expected, DAO.readAll());
+// 	}
 
-	@Test
-	public void testReadLatest() {
-		assertEquals(new Item(2L, "table", 50.00), DAO.readLatest());
-	}
+// 	@Test
+// 	public void testReadLatest() {
+// 		assertEquals(new Item(2L, "table", 50.00), DAO.readLatest());
+// 	}
 
-	@Test
-	public void testRead() {
-		final long id = 1L;
-		assertEquals(new Item(id, "macbook", 800.00), DAO.read(id));
-	}
+// 	@Test
+// 	public void testRead() {
+// 		final long id = 1L;
+// 		assertEquals(new Item(id, "macbook", 800.00), DAO.read(id));
+// 	}
 
-	@Test
-	public void testUpdate() {
-		final Item updated = new Item(1L, "lamp", 50.00);
-		assertEquals(updated, DAO.update(updated));
+// 	@Test
+// 	public void testUpdate() {
+// 		final Item updated = new Item(1L, "lamp", 50.00);
+// 		assertEquals(updated, DAO.update(updated));
 
-	}
+// 	}
 
-	@Test
-	public void testDelete() {
-		assertEquals(1, DAO.delete(1));
-	}
+// 	@Test
+// 	public void testDelete() {
+// 		assertEquals(1, DAO.delete(1));
+// 	}
 	
 }
 
