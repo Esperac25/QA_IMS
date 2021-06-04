@@ -63,3 +63,5 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 * etc
 
 ## Jira
+
+![IMS-Jira](https://user-images.githubusercontent.com/60672335/120848625-def71d80-c529-11eb-8fa9-ac4ff5bb4bf3.png)
